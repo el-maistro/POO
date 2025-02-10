@@ -77,7 +77,7 @@ public class FormularioSuma extends JFrame {
                 int numero1 = Integer.parseInt(txtNumero1.getText());
                 int numero2 = Integer.parseInt(txtNumero2.getText());
                 
-                int resultado = numero1 + numero2;
+                int resultado = calculadora.sumar(numero1, numero2);
                 
                 lblResultado.setText("Resultado: " + resultado);
             }
@@ -89,7 +89,7 @@ public class FormularioSuma extends JFrame {
                 int numero1 = Integer.parseInt(txtNumero1.getText());
                 int numero2 = Integer.parseInt(txtNumero2.getText());
                 
-                int resultado = numero1 - numero2;
+                int resultado = calculadora.restar(numero1, numero2);
                 
                 lblResultado.setText("Resultado: " + resultado);
             }
@@ -101,7 +101,7 @@ public class FormularioSuma extends JFrame {
                 int numero1 = Integer.parseInt(txtNumero1.getText());
                 int numero2 = Integer.parseInt(txtNumero2.getText());
                 
-                int resultado = numero1 * numero2;
+                int resultado = calculadora.multiplicar(numero1, numero2); 
                 
                 lblResultado.setText("Resultado: " + resultado);
             }
@@ -113,7 +113,7 @@ public class FormularioSuma extends JFrame {
                 int numero1 = Integer.parseInt(txtNumero1.getText());
                 int numero2 = Integer.parseInt(txtNumero2.getText());
                 
-                int resultado = numero1 / numero2;
+                int resultado = calculadora.dividir(numero1, numero2);
                 
                 lblResultado.setText("Resultado: " + resultado);
             }
